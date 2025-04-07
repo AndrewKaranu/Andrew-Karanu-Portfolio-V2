@@ -13,11 +13,11 @@
 	<Projects />
 	<Contact />
   </main>
-  <footer>
+  
 	<div class="copyright">
-	  <p>&copy; 2023 Your Name. All rights reserved.</p>
+	  <p>&copy; {new Date().getFullYear()} Andrew Kamami. All rights reserved.</p>
 	</div>
-  </footer>
+  
   
   <style>
 	/* Add any global styles here */
@@ -42,9 +42,16 @@
 	  padding: 0 20px;
 	}
   
-	footer {
+	.copyright {
 	  text-align: center;
 	  padding: 20px 0;
-	  background-color: #505554;
+	  background-color: rgba(20, 20, 20, 0.8);
+	  border-top: 1px solid rgba(60, 60, 60, 0.5);
+	  margin-top: 3rem;
+	}
+	
+	.copyright p {
+	  color: #e0e0e0;
+	  font-size: 0.9rem;
 	}
   </style>

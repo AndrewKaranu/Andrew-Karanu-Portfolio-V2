@@ -34,7 +34,7 @@
       <div class="role-container">
         <div class="role-prefix">I'm a </div>
         <div class="role-text">
-          <TypingEffect strings={["Web Developer", "Python Developer", "Java Developer", "Full Stack Engineer"]} />
+          <TypingEffect strings={["ML & AI Enthusiast","Web Developer", "Python Developer", "Java Developer", "Full Stack Engineer"]} />
         </div>
       </div>
       
@@ -43,18 +43,22 @@
         data-driven solutions, and innovative software systems.
       </p>
       
-      <div class="resume-button">
-        <a href="path/to/your-resume.pdf" class="btn resume-btn" download>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-          Download Resume
+      <div class="resume-button" in:fade={{duration: 800, delay: 600}}>
+        <a href="\Andrew_Kamami_Resume.pdf" class="custom-button" download>
+          <div class="button-content">
+            <div class="button-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            </div>
+            <span class="button-text">Download Resume</span>
+          </div>
         </a>
       </div>
-      
+
       <div class="social-links">
-        <a href="https://github.com/your-username" target="_blank" rel="noopener" aria-label="GitHub">
+        <a href="https://github.com/AndrewKaranu" target="_blank" rel="noopener" aria-label="GitHub">
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
         </a>
-        <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/andrew-karanu-998910237" target="_blank" rel="noopener" aria-label="LinkedIn">
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
         </a>
       </div>
@@ -182,8 +186,8 @@
   
   .greeting {
     font-size: 1.3rem;
-    font-weight: 500;
-    color: #B87333;
+    font-weight: 900;
+    color: #cacaca;
     margin-bottom: 0.5rem;
     letter-spacing: 1px;
   }
@@ -210,6 +214,8 @@
     font-size: 1.6rem;
     color: #e0e0e0;
   }
+
+  
   
   .role-text {
     color: #B87333;
@@ -226,33 +232,78 @@
   
   .resume-button {
     margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
   
-  .btn {
-    display: inline-flex;
+  .custom-button {
+    display: block;
+    background: #B87333;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(184, 115, 51, 0.3);
+    transition: all 0.3s ease;
+    width: 220px;
+  }
+  
+  .button-content {
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.8rem;
-    padding: 0.9rem 2rem;
-    border-radius: 30px;
-    font-size: 1.1rem;
-    font-weight: 500;
-    text-decoration: none;
-    text-align: center;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-    min-width: 200px;
-    background: #B87333;
-    color: #fff;
-    box-shadow: 0 4px 15px rgba(184, 115, 51, 0.3);
+    padding: 0.9rem 1.5rem;
+    position: relative;
+    z-index: 2;
   }
   
-  .resume-btn:hover {
-    background: #cf8d4b;
+  .button-icon {
+    margin-right: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .custom-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #B87333, #d99d4f);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .custom-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(184, 115, 51, 0.4);
   }
   
+  .custom-button:hover::after {
+    opacity: 1;
+  }
+  
+  .custom-button:hover .button-icon {
+    transform: translateY(3px);
+  }
+  
+  @media (max-width: 768px) {
+    .custom-button {
+      width: 100%;
+      max-width: 280px;
+    }
+    
+    .button-content {
+      padding: 0.8rem 1.5rem;
+    }
+  }
   .social-links {
     display: flex;
     gap: 1.5rem;
@@ -390,9 +441,6 @@
       font-size: 1rem;
     }
     
-    .btn {
-      width: 100%;
-      max-width: 280px;
-    }
+    
   }
 </style>

@@ -61,6 +61,17 @@
     },
     {
       id: 5,
+      title: "AMMATower Defense",
+      description: "Built a complete tower defense game with a fully interactive GUI using the Qt framework, supporting real-time player interaction. Implemented custom map generation with pathfinding algorithms.",
+      image: "Images/TowerDefense.png", 
+      video: "",
+      techStack: ["C++", "Qt", "CMake", "MinGW", "Pathfinding Algorithms", "Visual Studio Code"],
+      githubLink: "https://github.com/AndrewKaranu/Tower-Defense-Game-Comp-345", // Update with the actual link
+      siteLink: "",
+      category: "Game Development"
+    },
+    {
+      id: 6,
       title: "Job Salary Predictor",
       description: "Built ML model to predict job salaries using web-scraped data and regression. Used LLaMA 8B model via Ollama to augment missing data.",
       image: "Images/Model.png",
