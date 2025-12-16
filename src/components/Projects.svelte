@@ -17,9 +17,53 @@
   let projects = [
     {
       id: 1,
+      title: "StudyEngine",
+      description: "A portable, offline-capable study device built on ESP32. Features quiz/flashcard modes, AI-powered content generation from PDFs using Claude, voice transcript processing, and a web admin interface for teachers.",
+      image: "Images/studyengine.jpeg",
+      video: "",
+      techStack: ["C++", "ESP32", "LVGL", "FastAPI", "Python", "Claude AI", "SQLite"],
+      githubLink: "https://github.com/AndrewKaranu/StudyEngine",
+      siteLink: "",
+      category: "Embedded Systems"
+    },
+    {
+      id: 2,
+      title: "ScamShield",
+      description: "React Native app that trains users to recognize scams through realistic simulations of phone calls, texts, and emails. Features AI voice agents, scoring system, and fake phishing websites for safe practice.",
+      image: "Images/scamshield.png",
+      video: "",
+      techStack: ["React Native", "Expo", "TypeScript", "xAI Grok", "ElevenLabs", "AI Voice"],
+      githubLink: "https://github.com/AndrewKaranu/ScamShield",
+      siteLink: "",
+      category: "Mobile Development"
+    },
+    {
+      id: 3,
+      title: "Melody MCP Server",
+      description: "A Model Context Protocol server exposing Spotify controls to LLMs. Features OAuth authentication, AI playlist generation, music discovery via Last.fm, and 24 tools for playback control and search.",
+      image: "Images/melody.png",
+      video: "",
+      techStack: ["JavaScript", "Node.js", "MCP", "Spotify API", "OpenAI", "Last.fm API", "OAuth"],
+      githubLink: "https://github.com/AndrewKaranu/Melody-MCP-Server",
+      siteLink: "",
+      category: "AI & LLM Tools"
+    },
+    {
+      id: 4,
+      title: "Save Our Rhinos",
+      description: "Interactive digital photobook documenting rhino conservation efforts. Features immersive photography slideshow and direct donation integration with Ol Pejeta Conservancy to support the last northern white rhinos.",
+      image: "Images/saverhinos.png",
+      video: "",
+      techStack: ["React", "TypeScript", "Vite", "Tailwind CSS", "Shadcn UI", "GitHub Pages"],
+      githubLink: "https://github.com/AndrewKaranu/Save-Our-Rhinos",
+      siteLink: "https://andrewkaranu.github.io/Save-Our-Rhinos/",
+      category: "Web Development"
+    },
+    {
+      id: 5,
       title: "Match A Wish",
       description: "Developed a full-stack app to match toy donors with hospitals, using a matching algorithm powered by OpenAI embeddings. Won 1st place for Best Use of Databricks.",
-      image: "Images/match-a-wish.png", // Replace with your image path
+      image: "Images/match-a-wish.png",
       video: "",
       techStack: ["React", "Node.js", "Express", "Databricks SQL", "Auth0", "OpenAI Embeddings"],
       githubLink: "https://devpost.com/software/match-a-wish",
@@ -27,7 +71,7 @@
       category: "Full-Stack"
     },
     {
-      id: 2,
+      id: 6,
       title: "Melody",
       description: "MERN app offering AI-powered tools for Spotify: playlist generation from prompts, images, and listening history. Used OpenAI + Spotify APIs.",
       image: "Images/melody.png",
@@ -38,7 +82,7 @@
       category: "Web Development"
     },
     {
-      id: 3,
+      id: 7,
       title: "Touch Trust Bank",
       description: "Accessible banking app with facial authentication and voice commands. Built for visually impaired users, featuring a JavaFX interface and RAG system using Gemini.",
       image: "Images/TouchTrust.png",
@@ -49,7 +93,7 @@
       category: "Software"
     },
     {
-      id: 4,
+      id: 8,
       title: "Byte Sized Tech News",
       description: "Automated tech mailing list with React sign-up frontend and Flask backend. Scraped and summarized articles using ML and NLP with Gemini.",
       image: "Images/BSTN.png",
@@ -60,18 +104,18 @@
       category: "Data & ML"
     },
     {
-      id: 5,
+      id: 9,
       title: "AMMATower Defense",
       description: "Built a complete tower defense game with a fully interactive GUI using the Qt framework, supporting real-time player interaction. Implemented custom map generation with pathfinding algorithms.",
       image: "Images/TowerDefense.png", 
       video: "",
       techStack: ["C++", "Qt", "CMake", "MinGW", "Pathfinding Algorithms", "Visual Studio Code"],
-      githubLink: "https://github.com/AndrewKaranu/Tower-Defense-Game-Comp-345", // Update with the actual link
+      githubLink: "https://github.com/AndrewKaranu/Tower-Defense-Game-Comp-345",
       siteLink: "",
       category: "Game Development"
     },
     {
-      id: 6,
+      id: 10,
       title: "Job Salary Predictor",
       description: "Built ML model to predict job salaries using web-scraped data and regression. Used LLaMA 8B model via Ollama to augment missing data.",
       image: "Images/Model.png",
